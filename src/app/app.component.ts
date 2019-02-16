@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selectedFeature:string  = 'recipe';
+  onNavigate(feature){
+    this.selectedFeature = feature;
+  }
 }
